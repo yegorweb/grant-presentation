@@ -2,4 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
+  imports: {
+    presets: [
+      {
+        from: 'gsap',
+        imports: ['gsap']
+      }
+    ]
+  }
 })
